@@ -245,6 +245,14 @@ function Index() {
                 @leiafernandesam
               </a>
             </div>
+            <a
+              href={propostasPdf.url}
+              download="Propostas-Leia-Fernandes-22456.pdf"
+              className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-secondary-foreground/80 underline decoration-accent decoration-2 underline-offset-4 transition hover:text-secondary-foreground"
+            >
+              <Download className="h-4 w-4" />
+              Baixar proposta completa (PDF)
+            </a>
           </div>
           <div className="order-1 md:order-2">
             <div className="relative mx-auto max-w-sm md:max-w-md">
