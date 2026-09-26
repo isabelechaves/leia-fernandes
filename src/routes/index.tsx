@@ -476,6 +476,14 @@ function Index() {
               <Instagram className="h-5 w-5" />
               Siga @leiafernandesam
             </a>
+            <a
+              href={propostasPdf.url}
+              download="Propostas-Leia-Fernandes-22456.pdf"
+              className="inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-lg font-bold text-secondary-foreground shadow-lg transition hover:brightness-110"
+            >
+              <Download className="h-5 w-5" />
+              Baixar proposta (PDF)
+            </a>
           </div>
           <p className="mt-6 text-sm text-primary-foreground/70">
             Essas propostas continuam sendo construídas — com você. Sua voz ajuda a corrigir o que só
