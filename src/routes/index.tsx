@@ -12,6 +12,7 @@ import {
   Landmark,
   Quote,
   ChevronRight,
+  Download,
 } from "lucide-react";
 
 import fotoHero from "@/assets/leia-IMG_5086.jpg.asset.json";
@@ -20,6 +21,7 @@ import fotoProfissional from "@/assets/leia-IMG_5193.jpg.asset.json";
 import fotoBandeira from "@/assets/leia-IMG_5174.jpg.asset.json";
 import fotoRally from "@/assets/leia-rally-0049.jpg.asset.json";
 import fotoPalco from "@/assets/leia-rally-0041.jpg.asset.json";
+import propostasPdf from "@/assets/propostas-leia.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -243,6 +245,14 @@ function Index() {
                 @leiafernandesam
               </a>
             </div>
+            <a
+              href={propostasPdf.url}
+              download="Propostas-Leia-Fernandes-22456.pdf"
+              className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-secondary-foreground/80 underline decoration-accent decoration-2 underline-offset-4 transition hover:text-secondary-foreground"
+            >
+              <Download className="h-4 w-4" />
+              Baixar proposta completa (PDF)
+            </a>
           </div>
           <div className="order-1 md:order-2">
             <div className="relative mx-auto max-w-sm md:max-w-md">
@@ -465,6 +475,14 @@ function Index() {
             >
               <Instagram className="h-5 w-5" />
               Siga @leiafernandesam
+            </a>
+            <a
+              href={propostasPdf.url}
+              download="Propostas-Leia-Fernandes-22456.pdf"
+              className="inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-lg font-bold text-secondary-foreground shadow-lg transition hover:brightness-110"
+            >
+              <Download className="h-5 w-5" />
+              Baixar proposta (PDF)
             </a>
           </div>
           <p className="mt-6 text-sm text-primary-foreground/70">
