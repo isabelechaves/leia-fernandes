@@ -249,8 +249,8 @@ function Index() {
                   key={p.titulo}
                   className="rounded-2xl border border-border bg-card p-4 text-center shadow-sm"
                 >
-                  <p.icon className="mx-auto h-8 w-8 text-primary" />
-                  <p className="mt-2 font-bold text-foreground">{p.titulo}</p>
+                <p.icone className="mx-auto h-8 w-8 text-primary" />
+                <p className="mt-2 font-bold text-foreground">{p.titulo}</p>
                   <p className="mt-1 text-sm text-muted-foreground">{p.texto}</p>
                 </div>
               ))}
