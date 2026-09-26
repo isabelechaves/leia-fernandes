@@ -276,11 +276,22 @@ function Index() {
             <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">
               Enfermeira. Servidora pública. Cristã.
             </h2>
+            <p className="mt-3 text-base font-semibold text-accent">
+              41 anos · Natural de Lábrea, Amazonas
+            </p>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
               Cuidar de quem precisa é olhar para todo o Amazonas — da capital aos municípios mais
-              distantes. Como enfermeira e servidora pública, Leia Fernandes construiu suas propostas
-              a partir do que vive na prática: falhas de fluxo que custam tempo, saúde e, muitas vezes,
-              vidas. São compromissos técnicos, concretos e cobráveis.
+              distantes. Leia Fernandes nasceu em Lábrea, no interior do Amazonas, e chegou a Manaus
+              em 2005 com um sonho que nasceu no coração de Deus. Seu primeiro ministério foi o
+              missionário; foi nesse serviço de amor ao próximo que nasceu o chamado de cuidar das
+              crianças, das grávidas, dos adolescentes, dos idosos e das mulheres.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+              Ainda no ensino médio, cursou técnico em enfermagem e depois cabeleireira. Seguiu
+              estudando e fez curso superior em Serviço Social e, em seguida, em Administração
+              Empresarial Pública. Como servidora pública na área da saúde, viajou pelos interiores
+              do Amazonas — e viu de perto os problemas que suas propostas agora buscam corrigir.
+              Compromissos técnicos, concretos e cobráveis, nascidos da prática.
             </p>
             <div className="mt-7 grid gap-4 sm:grid-cols-3">
               {pilares.map((p) => (
@@ -288,12 +299,35 @@ function Index() {
                   key={p.titulo}
                   className="rounded-2xl border border-border bg-card p-4 text-center shadow-sm"
                 >
-                <p.icone className="mx-auto h-8 w-8 text-primary" />
-                <p className="mt-2 font-bold text-foreground">{p.titulo}</p>
+                  <p.icone className="mx-auto h-8 w-8 text-primary" />
+                  <p className="mt-2 font-bold text-foreground">{p.titulo}</p>
                   <p className="mt-1 text-sm text-muted-foreground">{p.texto}</p>
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Linha do tempo da trajetória */}
+        <div className="mt-14">
+          <h3 className="text-center text-2xl font-extrabold sm:text-3xl">
+            Uma trajetória de cuidado e conhecimento
+          </h3>
+          <div className="mt-8 grid gap-5 md:grid-cols-5">
+            {trajetoria.map((marco, i) => (
+              <div key={i} className="relative">
+                <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+                  <span className="inline-block rounded-full bg-accent px-3 py-0.5 text-xs font-bold text-accent-foreground">
+                    {marco.ano}
+                  </span>
+                  <h4 className="mt-3 text-base font-bold text-foreground">{marco.titulo}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{marco.texto}</p>
+                </div>
+                {i < trajetoria.length - 1 && (
+                  <div className="absolute -right-3 top-1/2 hidden h-0.5 w-6 -translate-y-1/2 bg-primary/30 md:block" />
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
