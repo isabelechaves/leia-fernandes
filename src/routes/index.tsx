@@ -12,6 +12,7 @@ import {
   Landmark,
   Quote,
   ChevronRight,
+  Download,
 } from "lucide-react";
 
 import fotoHero from "@/assets/leia-IMG_5086.jpg.asset.json";
