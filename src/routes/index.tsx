@@ -316,8 +316,8 @@ function Index() {
           <div className="mt-8 grid gap-5 md:grid-cols-5">
             {trajetoria.map((marco, i) => (
               <div key={i} className="relative">
-                <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-                  <span className="inline-block rounded-full bg-accent px-3 py-0.5 text-xs font-bold text-accent-foreground">
+                <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-sm">
+                  <span className="inline-block w-fit rounded-full bg-accent px-3 py-0.5 text-xs font-bold text-accent-foreground">
                     {marco.ano}
                   </span>
                   <h4 className="mt-3 text-base font-bold text-foreground">{marco.titulo}</h4>
