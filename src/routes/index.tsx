@@ -21,6 +21,7 @@ import fotoProfissional from "@/assets/leia-IMG_5193.jpg.asset.json";
 import fotoBandeira from "@/assets/leia-IMG_5174.jpg.asset.json";
 import fotoRally from "@/assets/leia-rally-0049.jpg.asset.json";
 import fotoPalco from "@/assets/leia-rally-0041.jpg.asset.json";
+import propostasPdf from "@/assets/propostas-leia.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
