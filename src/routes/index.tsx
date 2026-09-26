@@ -414,7 +414,7 @@ function Index() {
               <img
                 src={fotoProfissional.url}
                 alt="Leia Fernandes em postura profissional"
-                className="h-72 w-full object-cover transition hover:scale-105"
+                className="h-72 w-full object-cover object-top transition hover:scale-105"
               />
             </figure>
             <figure className="overflow-hidden rounded-2xl shadow-lg lg:row-span-2">
