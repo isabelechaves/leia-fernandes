@@ -148,9 +148,48 @@ const eixos: Eixo[] = [
 ];
 
 const pilares = [
-  { icone: Stethoscope, titulo: "Enfermeira", texto: "Quem conhece a saúde pública de dentro, na linha de frente." },
+  { icone: Stethoscope, titulo: "Enfermeira", texto: "Técnica em enfermagem e servidora pública na área da saúde, na linha de frente." },
   { icone: Landmark, titulo: "Servidora Pública", texto: "Compromisso com o serviço público e com quem dele depende." },
   { icone: Cross, titulo: "Cristã", texto: "Fé que move o cuidado com o próximo e a defesa da vida." },
+];
+
+type Marco = {
+  ano: string;
+  titulo: string;
+  texto: string;
+};
+
+const trajetoria: Marco[] = [
+  {
+    ano: "Lábrea/AM",
+    titulo: "Nasceu no interior do Amazonas",
+    texto:
+      "Leia Fernandes nasceu em Lábrea, no Amazonas. Desde cedo conviveu com a realidade do interior e dos povos da floresta.",
+  },
+  {
+    ano: "2005",
+    titulo: "Chegada a Manaus",
+    texto:
+      "Veio para Manaus com um sonho que nasceu no coração de Deus. Ainda no ensino médio, começou a cursar técnico em enfermagem e, depois, cabeleireira — sempre buscando conhecimento.",
+  },
+  {
+    ano: "Ministério",
+    titulo: "O chamado de cuidar",
+    texto:
+      "Seu primeiro ministério foi o missionário. Foi nesse serviço de amor ao próximo que nasceu o chamado de cuidar das crianças, das grávidas, dos adolescentes, dos idosos e das mulheres.",
+  },
+  {
+    ano: "Formação",
+    titulo: "Sempre estudando",
+    texto:
+      "Seguiu estudando e fez curso superior em Serviço Social e, depois, em Administração Empresarial Pública — unindo cuidado técnico e gestão pública.",
+  },
+  {
+    ano: "Interior",
+    titulo: "Conhecimento de causa",
+    texto:
+      "Viajou pelos interiores do Amazonas atuando na área da saúde. Viu de perto os problemas do estado e construiu, na prática, propostas técnicas e cobráveis.",
+  },
 ];
 
 function Index() {
