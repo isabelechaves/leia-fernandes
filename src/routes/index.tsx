@@ -414,28 +414,28 @@ function Index() {
               <img
                 src={fotoProfissional.url}
                 alt="Leia Fernandes em postura profissional"
-                className="h-72 w-full object-cover object-top transition hover:scale-105"
+                className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
-            <figure className="overflow-hidden rounded-2xl shadow-lg lg:row-span-2">
+            <figure className="overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={fotoRally.url}
                 alt="Leia Fernandes em caminhada com apoiadores"
-                className="h-full w-full object-cover transition hover:scale-105"
+                className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
             <figure className="overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={fotoBandeira.url}
                 alt="Leia Fernandes segurando a bandeira do Brasil"
-                className="h-72 w-full object-cover transition hover:scale-105"
+                className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
             <figure className="overflow-hidden rounded-2xl shadow-lg sm:col-span-2 lg:col-span-2">
               <img
                 src={fotoPalco.url}
                 alt="Leia Fernandes no palco fazendo gesto de coração"
-                className="h-72 w-full object-cover transition hover:scale-105 lg:h-full"
+                className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
           </div>
