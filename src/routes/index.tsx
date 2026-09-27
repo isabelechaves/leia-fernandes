@@ -409,29 +409,29 @@ function Index() {
               onde o povo está.
             </p>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <figure className="overflow-hidden rounded-2xl shadow-lg">
+          <div className="mt-10 columns-2 gap-4 lg:columns-3 [&_figure]:mb-4">
+            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={fotoProfissional.url}
                 alt="Leia Fernandes em postura profissional"
                 className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
-            <figure className="overflow-hidden rounded-2xl shadow-lg">
+            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={fotoRally.url}
                 alt="Leia Fernandes em caminhada com apoiadores"
                 className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
-            <figure className="overflow-hidden rounded-2xl shadow-lg">
+            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={fotoBandeira.url}
                 alt="Leia Fernandes segurando a bandeira do Brasil"
                 className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
-            <figure className="overflow-hidden rounded-2xl shadow-lg sm:col-span-2 lg:col-span-2">
+            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
                 src={fotoPalco.url}
                 alt="Leia Fernandes no palco fazendo gesto de coração"
