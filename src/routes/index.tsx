@@ -15,13 +15,13 @@ import {
   Download,
 } from "lucide-react";
 
-import fotoHero from "@/assets/leia-IMG_5086.jpg.asset.json";
-import fotoEnfermeira from "@/assets/leia-IMG_5030.jpg.asset.json";
-import fotoProfissional from "@/assets/leia-IMG_5193.jpg.asset.json";
-import fotoBandeira from "@/assets/leia-IMG_5174.jpg.asset.json";
-import fotoRally from "@/assets/leia-rally-0049.jpg.asset.json";
-import fotoPalco from "@/assets/leia-rally-0041.jpg.asset.json";
-import propostasPdf from "@/assets/propostas-leia.pdf.asset.json";
+const fotoHero = "/images/leia-IMG_5086.JPG";
+const fotoEnfermeira = "/images/leia-IMG_5030.JPG";
+const fotoProfissional = "/images/leia-IMG_5193.JPG";
+const fotoBandeira = "/images/leia-IMG_5174.JPG";
+const fotoRally = "/images/leia-rally-0049.jpg";
+const fotoPalco = "/images/leia-rally-0041.jpg";
+const propostasPdf = "/images/propostas-leia.pdf";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -246,7 +246,7 @@ function Index() {
               </a>
             </div>
             <a
-              href={propostasPdf.url}
+              href={propostasPdf}
               download="Propostas-Leia-Fernandes-22456.pdf"
               className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-secondary-foreground/80 underline decoration-accent decoration-2 underline-offset-4 transition hover:text-secondary-foreground"
             >
@@ -258,7 +258,7 @@ function Index() {
             <div className="relative mx-auto max-w-sm md:max-w-md">
               <div className="absolute -inset-3 -rotate-2 rounded-3xl bg-accent/80" />
               <img
-                src={fotoHero.url}
+                src={fotoHero}
                 alt="Leia Fernandes, candidata a deputada estadual do Amazonas"
                 className="relative rounded-3xl object-cover shadow-2xl"
               />
@@ -274,7 +274,7 @@ function Index() {
           <div className="relative order-2 md:order-1">
             <div className="absolute -inset-3 rotate-2 rounded-3xl bg-primary/20" />
             <img
-              src={fotoEnfermeira.url}
+              src={fotoEnfermeira}
               alt="Leia Fernandes como enfermeira"
               className="relative mx-auto max-w-sm rounded-3xl object-cover shadow-xl"
             />
@@ -412,28 +412,28 @@ function Index() {
           <div className="mt-10 columns-2 gap-4 lg:columns-3 [&_figure]:mb-4">
             <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
-                src={fotoProfissional.url}
+                src={fotoProfissional}
                 alt="Leia Fernandes em postura profissional"
                 className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
             <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
-                src={fotoRally.url}
+                src={fotoRally}
                 alt="Leia Fernandes em caminhada com apoiadores"
                 className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
             <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
-                src={fotoBandeira.url}
+                src={fotoBandeira}
                 alt="Leia Fernandes segurando a bandeira do Brasil"
                 className="block w-full h-auto transition hover:scale-105"
               />
             </figure>
             <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
               <img
-                src={fotoPalco.url}
+                src={fotoPalco}
                 alt="Leia Fernandes no palco fazendo gesto de coração"
                 className="block w-full h-auto transition hover:scale-105"
               />
@@ -477,7 +477,7 @@ function Index() {
               Siga @leiafernandesam
             </a>
             <a
-              href={propostasPdf.url}
+              href={propostasPdf}
               download="Propostas-Leia-Fernandes-22456.pdf"
               className="inline-flex items-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-lg font-bold text-secondary-foreground shadow-lg transition hover:brightness-110"
             >
