@@ -32,14 +32,14 @@ export const Route = createFileRoute("/")({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Leia Fernandes 22456 — Deputada Estadual do Amazonas",
+        title: "Leia Fernandes",
       },
       {
         name: "description",
         content:
           "Leia Fernandes, enfermeira e servidora pública, candidata a deputada estadual do Amazonas pelo número 22456. Saúde, cuidado e compromisso com o povo amazonense.",
       },
-      { property: "og:title", content: "Leia Fernandes 22456 — Deputada Estadual do Amazonas" },
+      { property: "og:title", content: "Leia Fernandes 22456 — Candidata Deputada Estadual do Amazonas" },
       {
         property: "og:description",
         content:
@@ -201,7 +201,7 @@ function Index() {
       <div className="bg-secondary text-secondary-foreground">
         <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 px-4 py-2 text-center text-xs font-semibold tracking-wide sm:text-sm">
           <span className="rounded bg-accent px-2 py-0.5 font-bold text-accent-foreground">22456</span>
-          <span>LEIA FERNANDES · DEPUTADA ESTADUAL DO AMAZONAS</span>
+          <span>LEIA FERNANDES · CANDIDATA A DEPUTADA ESTADUAL DO AMAZONAS</span>
         </div>
       </div>
 
@@ -222,7 +222,7 @@ function Index() {
               FERNANDES
             </h1>
             <p className="mt-3 text-xl font-semibold text-accent sm:text-2xl">
-              Deputada Estadual do Amazonas
+              Candidata a Deputada Estadual do Amazonas
             </p>
             <p className="mt-5 max-w-md text-lg text-secondary-foreground/90">
               Paixão em cuidar. Determinação para defender. Visão para o futuro.
