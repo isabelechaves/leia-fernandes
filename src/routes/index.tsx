@@ -23,6 +23,21 @@ const fotoRally = "/images/leia-rally-0049.jpg";
 const fotoPalco = "/images/leia-rally-0041.jpg";
 const propostasPdf = "/images/propostas-leia.pdf";
 
+const fotosGaleria = [
+  { src: fotoProfissional, alt: "Leia Fernandes em postura profissional" },
+  { src: fotoRally, alt: "Leia Fernandes em caminhada com apoiadores" },
+  { src: fotoBandeira, alt: "Leia Fernandes segurando a bandeira do Brasil" },
+  { src: fotoPalco, alt: "Leia Fernandes no palco fazendo gesto de coração" },
+  ...Array.from({ length: 9 }, (_, index) => {
+    const numeroFoto = 5011 + index;
+
+    return {
+      src: `/images/leia-${numeroFoto}.jpeg`,
+      alt: "Leia Fernandes em atividade de campanha",
+    };
+  }),
+];
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -410,34 +425,20 @@ function Index() {
             </p>
           </div>
           <div className="mt-10 columns-2 gap-4 lg:columns-3 [&_figure]:mb-4">
-            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src={fotoProfissional}
-                alt="Leia Fernandes em postura profissional"
-                className="block w-full h-auto transition hover:scale-105"
-              />
-            </figure>
-            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src={fotoRally}
-                alt="Leia Fernandes em caminhada com apoiadores"
-                className="block w-full h-auto transition hover:scale-105"
-              />
-            </figure>
-            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src={fotoBandeira}
-                alt="Leia Fernandes segurando a bandeira do Brasil"
-                className="block w-full h-auto transition hover:scale-105"
-              />
-            </figure>
-            <figure className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg">
-              <img
-                src={fotoPalco}
-                alt="Leia Fernandes no palco fazendo gesto de coração"
-                className="block w-full h-auto transition hover:scale-105"
-              />
-            </figure>
+            {fotosGaleria.map((foto) => (
+              <figure
+                key={foto.src}
+                className="break-inside-avoid overflow-hidden rounded-2xl shadow-lg"
+              >
+                <img
+                  src={foto.src}
+                  alt={foto.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="block h-auto w-full transition hover:scale-105"
+                />
+              </figure>
+            ))}
           </div>
         </div>
       </section>
